@@ -111,8 +111,7 @@ run_analysis <- function()
     colNames <- colnames(tidyData)
     colNames <- gsub("[*()*]", "", colNames)
     colnames(tidyData) <- colNames
-    
-    
+        
     # Write the resulting tide data to an output file
     write.csv(tidyData, file="./tidyData.csv", row.names = FALSE)
     
