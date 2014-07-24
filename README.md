@@ -20,15 +20,15 @@ Coursera Getting and Cleaning Data Assignment 1
  
  The code-book / data dictionary is as follows:
 
-*Subject: Subject ID number
+* Subject: Subject ID number
 
-*Activity:                       
-	- 1 WALKING
-	- 2 WALKING_UPSTAIRS
-	- 3 WALKING_DOWNSTAIRS
-	- 4 SITTING
-	- 5 STANDING
-	- 6 LAYING
+* Activity:                       
+  - 1 WALKING
+  - 2 WALKING_UPSTAIRS
+  - 3 WALKING_DOWNSTAIRS
+  - 4 SITTING
+  - 5 STANDING
+  - 6 LAYING
  
 * tBodyAcc-mean-X: Mean body acceleration signal in X dimension
 * tBodyAcc-mean-Y: Mean body acceleration signal in Y dimension
