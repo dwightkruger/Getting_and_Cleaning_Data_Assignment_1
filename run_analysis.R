@@ -113,7 +113,7 @@ run_analysis <- function()
     colnames(tidyData) <- colNames
         
     # Write the resulting tide data to an output file
-    write.csv(tidyData, file="./tidyData.csv", row.names = FALSE)
+    write.table(tidyData, file="./tidyData.csv", row.names = FALSE)
     
     tidyData
 }
