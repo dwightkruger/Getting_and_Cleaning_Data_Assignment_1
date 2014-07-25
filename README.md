@@ -24,7 +24,7 @@ Coursera Getting and Cleaning Data Assignment 1
 
  History:     2014-July-11 - Dwight Kruger - Original Version
  
- The code-book / data dictionary is as follows:
+ The code-book / data dictionary for the resulting tidy dataset is as follows:
 
 * Subject: Integer, Subject ID number
 
@@ -70,49 +70,55 @@ Coursera Getting and Cleaning Data Assignment 1
 * tBodyAccMag-std:  Float - Standard deviation of the magnitude of body linear acceleration                         
 * tGravityAccMag-mean: Float - Mean magnitude of gravity acceleration signals                     
 * tGravityAccMag-std:  Float - Standard deviation of the magnitude of gravity acceleration signals                                  
-* tBodyAccJerkMag-mean        
-* tBodyAccJerkMag-std         
-* tBodyGyroMag-mean           
-* tBodyGyroMag-std            
-* tBodyGyroJerkMag-mean       
-* tBodyGyroJerkMag-std        
-* fBodyAcc-mean-X             
-* fBodyAcc-mean-Y             
-* fBodyAcc-mean-Z             
-* fBodyAcc-std-X              
-* fBodyAcc-std-Y              
-* fBodyAcc-std-Z              
-* fBodyAcc-meanFreq-X         
-* fBodyAcc-meanFreq-Y         
-* fBodyAcc-meanFreq-Z         
-* fBodyAccJerk-mean-X         
-* fBodyAccJerk-mean-Y         
-* fBodyAccJerk-mean-Z         
-* fBodyAccJerk-std-X          
-* fBodyAccJerk-std-Y          
-* fBodyAccJerk-std-Z          
-* fBodyAccJerk-meanFreq-X     
-* fBodyAccJerk-meanFreq-Y     
-* fBodyAccJerk-meanFreq-Z     
-* fBodyGyro-mean-X            
-* fBodyGyro-mean-Y            
-* fBodyGyro-mean-Z            
-* fBodyGyro-std-X             
-* fBodyGyro-std-Y             
-* fBodyGyro-std-Z             
-* fBodyGyro-meanFreq-X        
-* fBodyGyro-meanFreq-Y        
-* fBodyGyro-meanFreq-Z        
-* fBodyAccMag-mean            
-* fBodyAccMag-std             
-* fBodyAccMag-meanFreq        
-* fBodyBodyAccJerkMag-mean    
-* fBodyBodyAccJerkMag-std     
-* fBodyBodyAccJerkMag-meanFreq
-* fBodyBodyGyroMag-mean       
-* fBodyBodyGyroMag-std        
-* fBodyBodyGyroMag-meanFreq   
-* fBodyBodyGyroJerkMag-mean   
-* fBodyBodyGyroJerkMag-std    
-* fBodyBodyGyroJerkMag-meanFreq 
- 
+* tBodyAccJerkMag-mean: Float - Mean magnitude of the body jerk signals        
+* tBodyAccJerkMag-std:  Float - Standard deviation magnitude of the body jerk signals                 
+* tBodyGyroMag-mean: Float - Mean magnitude of the angular velocity signals                   
+* tBodyGyroMag-std:  Float - Standard deviation magnitude of the angular velocity signals                            
+* tBodyGyroJerkMag-mean: Float - Mean magnitude of the angular velocity jerk signals               
+* tBodyGyroJerkMag-std:  Float - Standard deviation magnitude of the angular velocity jerk signals                        
+* fBodyAcc-mean-X: Float - Mean fast fourier transform body acceleration in X dimension
+* fBodyAcc-mean-Y: Float - Mean fast fourier transform body acceleration in Y dimension
+* fBodyAcc-mean-Z: Float - Mean fast fourier transform body acceleration in Z dimension 
+* fBodyAcc-std-X: Float - Standard deviation fast fourier transform body acceleration in X dimension              
+* fBodyAcc-std-Y: Float - Standard deviation fast fourier transform body acceleration in Y dimension              
+* fBodyAcc-std-Z: Float - Standard deviation fast fourier transform body acceleration in Z dimension               
+* fBodyAcc-meanFreq-X: Float - Weighted average of the frequency components to obtain a mean frequency of body acceleration in X dimension
+* fBodyAcc-meanFreq-Y: Float - Weighted average of the frequency components to obtain a mean frequency of body acceleration in Y dimension        
+* fBodyAcc-meanFreq-Z: Float - Weighted average of the frequency components to obtain a mean frequency of body acceleration in Z dimension        
+* fBodyAccJerk-mean-X: Float - Weighted average of the frequency components to obtain a mean frequency of body acceleration in X dimension         
+* fBodyAccJerk-mean-Y: Float - Weighted average of the frequency components to obtain a mean frequency of body acceleration in Y dimension                 
+* fBodyAccJerk-mean-Z: Float - Weighted average of the frequency components to obtain a mean frequency of body acceleration in Z dimension                 
+* fBodyAccJerk-std-X: Float - Standard deviation of the body linear acceleration in the X dimension          
+* fBodyAccJerk-std-Y: Float - Standard deviation of the body linear acceleration in the Y dimension                    
+* fBodyAccJerk-std-Z: Float - Standard deviation of the body linear acceleration in the Z dimension                    
+* fBodyAccJerk-meanFreq-X: Float - Weighted average of the frequency components to obtain a mean frequency in X dimension
+* fBodyAccJerk-meanFreq-Y: Float - Weighted average of the frequency components to obtain a mean frequency in X dimension     
+* fBodyAccJerk-meanFreq-Z: Float - Weighted average of the frequency components to obtain a mean frequency in X dimension     
+* fBodyGyro-mean-X: Float - Mean fast fourier transform body acceleration in X dimension                           
+* fBodyGyro-mean-Y: Float - Mean fast fourier transform body acceleration in Y dimension                                      
+* fBodyGyro-mean-Z: Float - Mean fast fourier transform body acceleration in Z dimension                                      
+* fBodyGyro-std-X: Float - Standard deviation fast fourier transform body acceleration in X dimension                                       
+* fBodyGyro-std-Y: Float - Standard deviation fast fourier transform body acceleration in Y dimension                                                  
+* fBodyGyro-std-Z: Float - Standard deviation fast fourier transform body acceleration in Z dimension                                                  
+* fBodyGyro-meanFreq-X: Float - Weighted average of the body frequency components to obtain a mean frequency in the X dimension
+* fBodyGyro-meanFreq-Y: Float - Weighted average of the body frequency components to obtain a mean frequency in the Y dimension        
+* fBodyGyro-meanFreq-Z: Float - Weighted average of the body frequency components to obtain a mean frequency in the Z dimension       
+* fBodyAccMag-mean: Float - Mean of body acceleration signals in a signal window sample            
+* fBodyAccMag-std: Float - Standard deviation of body acceleration signals in a signal window sample                         
+* fBodyAccMag-meanFreq: Float - Weighted average of the frequency components in a signal window sample                    
+* fBodyBodyAccJerkMag-mean: Float - Mean of the signals in a signal window sample for the body acceleration
+* fBodyBodyAccJerkMag-std:  Float - Standard deviation of the signals in a signal window sample for the body acceleration    
+* fBodyBodyAccJerkMag-meanFreq: Float
+* fBodyBodyGyroMag-mean: Float       
+* fBodyBodyGyroMag-std:  Float        
+* fBodyBodyGyroMag-meanFreq: Float   
+* fBodyBodyGyroJerkMag-mean: Float   
+* fBodyBodyGyroJerkMag-std:  Float    
+* fBodyBodyGyroJerkMag-meanFreq: Float 
+* angletBodyAccMean,gravity: Float - angle vector obtained by averaging the body acceleration
+* angletBodyAccJerkMean,gravityMean: Float angle vector obtained by averaging the acceleration jerk
+* angletBodyGyroMean,gravityMean: Float - averaging the signals for the body gyro jerk in a signal window sample
+* angletBodyGyroJerkMean,gravityMean: Float - averaging the signals for the body gyro jerk in a signal window sample
+* angleX,gravityMean: Float - X angle vector obtained by averaging the gravity signals in a signal window sample 
+* angleY,gravityMean: Float - Y angle vector obtained by averaging the gravity signals in a signal window sample 
+* angleZ,gravityMean: Float - Z angle vector obtained by averaging the gravity signals in a signal window sample 

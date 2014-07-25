@@ -66,7 +66,7 @@ run_analysis <- function()
     #   The mean and standard deviation are denoted by features with suffix mean() and std()
     #   respectively. Find all of the column names with those suffixes.
     features <- colnames(mergeData)
-    meanANDstd <- subset(mergeData, select=grepl("*mean()*|*std()*",features))
+    meanANDstd <- subset(mergeData, select=grepl("*mean*|*std*",features, ignore.case = TRUE))
     
     # Step #3. Create a second, independent tidy data set with the average of each variable 
     # for each activity and each subject. 
